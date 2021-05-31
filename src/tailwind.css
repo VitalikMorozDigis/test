@@ -1,0 +1,21 @@
+/* purgecss start ignore */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+/* purgecss end ignore */
+@import "tailwindcss/utilities";
+
+p:empty {
+  display: none;
+}
+
+.icon-style {
+  @apply text-primary-400 bg-primary-100 p-2 rounded-full;
+}
+
+.clamp-2 {
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+}
